@@ -1,0 +1,123 @@
+/* BODY */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+/****cabecera-menunav****/
+header a {
+   color: #fff;
+   text-decoration: none;
+ }
+ /*top*/
+ header {
+   display: flex;
+   flex-direction: column;
+   padding: 0.5em 0;
+ }
+
+ .redes-sociales {
+   display: flex;
+   margin: 0 1em;
+ }
+ .redes-sociales ul {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 0;
+ }
+ .redes-sociales li {
+   list-style: none;
+   margin-right: 0.75rem;
+ }
+ .redes-sociales li:last-child{
+   margin-right:0;
+ }
+ .redes-sociales a {
+   align-items: center;
+   border-radius: 50%;
+   color: #fff;
+   display: flex;
+   height: 1.5rem;
+   justify-content: center;
+   width: 1.5rem;
+ }
+ .redes-sociales a:hover {
+   color: #fff;
+   text-decoration: none;
+ }
+ .fb {
+   background: #2b1100;
+ }
+ .tw {
+   background: #2b1100;
+ }
+ .yt {
+   background: #2b1100;
+ }
+ .pinterest {
+   background: #2b1100;
+ }
+ .instagram {
+   background: #2b1100;
+ }
+ .tiktok{
+   background-color: #2b1100;
+ }
+ .whatsapp {
+   background-color: #2b1100;
+ }
+ .telegram {
+   background-color: #2b1100;
+ }
+ .fa-star-o::before {
+   content: "\f006";
+ }
+
+ /*marca*/
+ .brand {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 1px;
+   padding: 10px;
+ }
+ /*menu navegacion*/
+ header nav {
+   background: #f4daef;
+   color: black;
+   display: flex;
+   justify-content: space-around;
+ }
+ nav ul {
+   align-items: stretch;
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+ }
+ nav ul li {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+ }
+ nav ul li a {
+   color: #000;
+   margin: 0 0.8em;
+ }
+ nav ul li a:hover {
+   color: #fff;
+ }
+ /*estilo a personalizar en los custom-.css*/
+ nav ul li.activo {
+   background-color: #cf3cb3;
+   position: relative;
+ }
+ nav ul li.activo::before {
+    color: #cf3cb3;
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-size: 22px;
+    opacity: 1;
+    position: absolute;
+    right: -7px;
+}
+
+ /* Estilos adicionales para mejorar la apariencia en dispositivos pequeños */

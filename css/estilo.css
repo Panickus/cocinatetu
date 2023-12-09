@@ -1,0 +1,35 @@
+
+body {
+  padding-top: 56px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .redes-sociales {
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+  }
+
+  .redes-sociales ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+  }
+
+  .redes-sociales li {
+    margin: 0 10px;
+  }
+}
