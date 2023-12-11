@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/kitchen.css">
+   <title>Últimas Recetas</title>
+   <!-- Agrega la CDN de Bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <!-- Agrega la CDN de Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+ <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logotu.svg" alt="hoycocinastu.com" class="img-responsive" width="280" loading="lazy">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-new" aria-controls="navbar-main-new" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-main-new">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/index.html" title="home">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/categories.html" title="categories">Categorías</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/ingredientes.html" title="ingredientes">Ingredientes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pais.html" title="pais">País</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/somos.html" title="somos">Quiénes Somos</a>
-            </li>
-          </ul>
-        </div>
-        <div class="redes-sociales">
-          <ul>
-            <li><a title="Facebook CocinateTu" target="_blank" rel="noopener" href="https://www.facebook.com/CocinateTu/" class="fb"><i class="fab fa-facebook-f fa-sm"></i></a></li>
-            <li><a title="Twitter CocinateTu" target="_blank" rel="noopener" href="https://www.twitter.com/CocinateTu/" class="tw"><i class="fab fa-twitter"></i></a></li>
-            <li><a title="Youtube CocinateTu" target="_blank" rel="noopener" href="https://www.youtube.com/CocinateTu/" class="yt"><i class="fab fa-youtube fa-sm"></i></a></li>
-            <li><a title="Pinteret CocinateTu" target="_blank" rel="noopener" href="https://www.pinterest.com/CocinateTu/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-            <li><a title="Instagram CocinateTu" target="_blank" rel="noopener" href="https://www.instragram.com/CocinateTu/" class="instagram"><i class="fab fa-instagram"></i></a></li>
-            <li><a title="Tik Tok CocinateTu" target="_blank" rel="noopener" href="https://www.tiktok.com/@CocinateTu" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
-            <li><a title="WhatsApp CocinateTu" target="_blank" rel="noopener" href="https://www.whatsapp.com/channel/sdkfaskdjfoiasd4" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a title="Telegram CocinateTu" target="_blank" rel="noopener" href="https://www.t.me/CocinateTu/" class="telegram"><i class="fab fa-telegram"></i></a></li>
-          </ul>
-        </div>
+    <div class="brand">
+      <div class="logo">
+          <img src="images/logotu.svg" alt="Logo de tu página">
       </div>
-    </nav>
+      <div class="redes-sociales hide-on-small-screen">
+            <ul>
+              <li><a title="Facebook cocinatetu" target="_blank" rel="noopener" href="https://www.facebook.com/cocinatetu/" class="fb"><i class="fab fa-facebook-f fa-sm"></i></a></li>
+              <li><a title="Twitter cocinatetu" target="_blank" rel="noopener" href="https://www.twitter.com/cocinatetu/" class="tw"><i class="fab fa-twitter"></i></a></li>
+              <li><a title="Youtube cocinatetu" target="_blank" rel="noopener" href="https://www.youtube.com/cocinatetu/" class="yt"><i class="fab fa-youtube fa-sm"></i></a></li>
+              <li><a title="Pinteret cocinatetu" target="_blank" rel="noopener" href="https://www.pinterest.com/cocinatetu/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+              <li><a title="Instagram cocinatetu" target="_blank" rel="noopener" href="https://www.instragram.com/cocinatetu/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a title="Tik Tok cocinatetu" target="_blank" rel="noopener" href="https://www.tiktok.com/@cocinatetu" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
+              <li><a title="WhatsApp cocinatetu" target="_blank" rel="noopener" href="https://www.whatsapp.com/channel/sdkfaskdjfoiasd4" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+              <li><a title="Telegram cocinatetu" target="_blank" rel="noopener" href="https://www.t.me/cocinatetu/" class="telegram"><i class="fab fa-telegram"></i></a></li>
+          </ul>
+      </div>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Países</a></li>
+                <li><a href="#">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+    <div class="hamburguesa-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
   </header>
+   <div class="container mt-5">
+     <h1 class="text-center">Últimas Recetas</h1>
+     <div class="row mt-4" id="recetasContainer">
+       <!-- Las recetas se añadirán aquí dinámicamente -->
+     </div>
+   </div>
 
-  <!-- Agrega el resto de tu contenido aquí -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Agrega la CDN de Bootstrap y jQuery (necesario para Bootstrap) -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Agrega tus otros scripts aquí -->
+   <script src="main.js"></script>
+   <script src="ramdon.js"></script>
 </body>
 </html>

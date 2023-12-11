@@ -47,3 +47,13 @@
 
  // Llama a la función al cargar la página
  window.onload = obtenerUltimasRecetas;
+
+
+ const hamburguesaMenu = document.querySelector('.hamburguesa-menu');
+ const navUl = document.querySelector('nav ul');
+
+ hamburguesaMenu.addEventListener('click', () => {
+     navUl.classList.toggle('show');
+ });
+
+ 

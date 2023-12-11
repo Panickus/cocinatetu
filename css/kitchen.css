@@ -1,0 +1,196 @@
+body {
+   font-family: monserrat;
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   background-color: #ebebeb;
+   color: #2b1100;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+
+.brand {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo img {
+   max-width: 70%;
+   height: auto;
+   order: 1;
+}
+
+.header-right {
+   display: flex;
+   align-items: center;
+   list-style: none;
+   order: 3;
+}
+
+.redes-sociales {
+   color: #f4daef;
+   text-decoration: none;
+   display: flex;
+ }
+
+ .fb {
+   background: #2b1100;
+ }
+ .tw {
+   background: #2b1100;
+ }
+ .yt {
+   background: #2b1100;
+ }
+ .pinterest {
+   background: #2b1100;
+ }
+ .instagram {
+   background: #2b1100;
+ }
+ .tiktok{
+   background-color: #2b1100;
+ }
+ .whatsapp {
+   background-color: #2b1100;
+ }
+ .telegram {
+   background-color: #2b1100;
+ }
+ .fa-star-o::before {
+   content: "\f006";
+ }
+
+ .redes-sociales {
+   display: flex;
+   margin: 0 1em;
+ }
+ .redes-sociales ul {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 0;
+ }
+ .redes-sociales li {
+   list-style: none;
+   margin-right: 0.75rem;
+ }
+ .redes-sociales li:last-child{
+   margin-right:0;
+ }
+ .redes-sociales a {
+   align-items: center;
+   border-radius: 50%;
+   color: #f4daef;
+   display: flex;
+   height: 1.5rem;
+   justify-content: center;
+   width: 1.5rem;
+ }
+ .redes-sociales a:hover {
+   color: #cf3cb3;
+   text-decoration: none;
+ }
+
+ header nav {
+   background: #f4daef;
+   display: flex;
+   font-weight: 600;
+ }
+ nav ul {
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   margin: 10px;
+   order: 2
+ }
+ nav ul li {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+ }
+ nav ul li a {
+   color: #000;
+   margin: 0 0.7em;
+ }
+ nav ul li a:hover {
+   color: #cf3cb3;
+   text-decoration: none;
+ }
+.hamburguesa-menu {
+   display: none; /* Ocultamos por defecto en pantallas grandes */
+   cursor: pointer;
+   order: 4;
+}
+
+.bar {
+   width: 25px;
+   height: 3px;
+   background-color: #2b1100;
+   margin: 5px 0;
+   display: flex;
+   align-self: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+   nav ul {
+       display: none;
+   }
+
+   nav ul.show {
+       display: flex; /* Mostramos el menú cuando tiene la clase 'show' */
+       flex-direction: column;
+       position: absolute;
+       top: 60px; /* Ajusta según tu diseño */
+       width: 95%;
+       background-color: #f4daef;
+       padding: 5px;
+       z-index: 1;
+   }
+
+   nav a {
+       margin: 10px 0;
+   }
+   
+   .hamburguesa-menu {
+       display: block;
+       order: 2;
+   }
+
+   .redes-sociales.hide-on-small-screen {
+      display: none; /* Ocultar en pantallas pequeñas */
+  }
+
+  .logo img {
+   order: 2; /* Cambia el orden para que aparezca después del menú hamburguesa en pantallas pequeñas */
+}
+
+.header-right {
+   order: 3;
+}
+
+nav ul {
+   order: 1;
+}
+
+.hamburguesa-menu {
+   order: 4;
+}
+
+.bar {
+   width: 25px;
+   height: 3px;
+   background-color: #2b1100;
+   margin: 5px 0;
+   display: flex;
+   align-self: center;
+}
+}
+
+
