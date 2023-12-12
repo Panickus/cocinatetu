@@ -40,6 +40,8 @@ header {
    color: #f4daef;
    text-decoration: none;
    display: flex;
+   justify-content: center;
+   padding: 15px;
  }
 
  .fb {
@@ -70,11 +72,6 @@ header {
    content: "\f006";
  }
 
- .redes-sociales {
-   display: flex;
-   justify-content: center;
-   padding: 15px;
- }
  .redes-sociales ul {
    align-items: center;
    display: flex;
@@ -152,7 +149,22 @@ footer {
   list-style: none;
 }
 
+.row {
+  margin-bottom: 5px;
+}
+.item {
+  text-align: center;
+  font-weight: 600;
+}
+.item img {
+  width: 75%;
+  height: auto;
+}
 
+.ramdon {
+  display: flex;
+  justify-content: center;
+}
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
    nav ul {

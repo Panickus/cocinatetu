@@ -48,12 +48,30 @@
  // Llama a la función al cargar la página
  window.onload = obtenerUltimasRecetas;
 
-
  const hamburguesaMenu = document.querySelector('.hamburguesa-menu');
  const navUl = document.querySelector('nav ul');
 
  hamburguesaMenu.addEventListener('click', () => {
      navUl.classList.toggle('show');
  });
-
  
+
+ // Mostrar 10 recetas ramdon
+ fetch('https://www.themealdb.com/api/json/v2/1/randomselection.php')
+        .then(response => response.json())
+        .then(data => {
+          const results = document.getElementById('results');
+          let row;
+          for (let i = 0; i < data.meals.length; i++) {
+            if (i % 3 === 0) {
+              row = document.createElement('div');
+              row.classList.add('row');
+              results.appendChild(row);
+            }
+            const item = document.createElement('div');
+            item.classList.add('col-sm-4');
+            item.classList.add('item');
+            item.innerHTML = `<img src="${data.meals[i].strMealThumb}" alt="${data.meals[i].strMeal}"><p>${data.meals[i].strMeal}</p>`;
+            row.appendChild(item);
+          }
+        });
