@@ -16,7 +16,11 @@ header {
 .brand {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-evenly;
+}
+
+.logo {
+  max-width: 70%;
 }
 
 .logo img {
@@ -100,11 +104,12 @@ header {
  header nav {
    background: #f4daef;
    display: flex;
+   justify-content: center;
    font-weight: 600;
  }
  nav ul {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    list-style: none;
    margin: 10px;
    order: 2
@@ -134,7 +139,7 @@ header {
    background-color: #2b1100;
    margin: 5px 0;
    display: flex;
-   align-self: center;
+   align-self: flex-end;
 }
 
 /* Estilos para pantallas pequeñas */
@@ -157,11 +162,6 @@ header {
    nav a {
        margin: 10px 0;
    }
-   
-   .hamburguesa-menu {
-       display: block;
-       order: 2;
-   }
 
    .redes-sociales.hide-on-small-screen {
       display: none; /* Ocultar en pantallas pequeñas */
@@ -180,6 +180,10 @@ nav ul {
 }
 
 .hamburguesa-menu {
+   max-width: 50px;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
    order: 4;
 }
 
