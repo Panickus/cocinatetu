@@ -1,49 +1,47 @@
-/* BODY */
 body {
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: monserrat;
+   margin: 0;
+   padding: 0;
 }
-/****cabecera-menunav****/
-header a {
-   color: #fff;
-   text-decoration: none;
- }
- /*top*/
- header {
+
+header {
+   background-color: #ebebeb;
+   color: #2b1100;
    display: flex;
-   flex-direction: column;
-   padding: 0.5em 0;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+
+.brand {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.logo {
+  max-width: 70%;
+}
+
+.logo img {
+   max-width: 70%;
+   height: auto;
+   order: 1;
+}
+
+.header-right {
+   display: flex;
+   align-items: center;
+   list-style: none;
+   order: 3;
+}
+
+.redes-sociales {
+   color: #f4daef;
+   text-decoration: none;
+   display: flex;
  }
 
- .redes-sociales {
-   display: flex;
-   margin: 0 1em;
- }
- .redes-sociales ul {
-   align-items: center;
-   display: flex;
-   justify-content: center;
-   margin-bottom: 0;
- }
- .redes-sociales li {
-   list-style: none;
-   margin-right: 0.75rem;
- }
- .redes-sociales li:last-child{
-   margin-right:0;
- }
- .redes-sociales a {
-   align-items: center;
-   border-radius: 50%;
-   color: #fff;
-   display: flex;
-   height: 1.5rem;
-   justify-content: center;
-   width: 1.5rem;
- }
- .redes-sociales a:hover {
-   color: #fff;
-   text-decoration: none;
- }
  .fb {
    background: #2b1100;
  }
@@ -72,26 +70,50 @@ header a {
    content: "\f006";
  }
 
- /*marca*/
- .brand {
+ .redes-sociales {
    display: flex;
-   align-items: center;
-   justify-content: space-around;
-   margin: 1px;
-   padding: 10px;
+   justify-content: center;
+   padding: 15px;
  }
- /*menu navegacion*/
+ .redes-sociales ul {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 0;
+ }
+ .redes-sociales li {
+   list-style: none;
+   margin-right: 0.75rem;
+ }
+ .redes-sociales li:last-child{
+   margin-right:0;
+ }
+ .redes-sociales a {
+   align-items: center;
+   border-radius: 50%;
+   color: #f4daef;
+   display: flex;
+   height: 1.5rem;
+   justify-content: center;
+   width: 1.5rem;
+ }
+ .redes-sociales a:hover {
+   color: #cf3cb3;
+   text-decoration: none;
+ }
+
  header nav {
    background: #f4daef;
-   color: black;
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
+   font-weight: 600;
  }
  nav ul {
-   align-items: stretch;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    list-style: none;
+   margin: 10px;
+   order: 2
  }
  nav ul li {
    align-items: center;
@@ -100,23 +122,89 @@ header a {
  }
  nav ul li a {
    color: #000;
-   margin: 0 0.8em;
+   margin: 0 0.7em;
  }
  nav ul li a:hover {
-   color: #fff;
+   color: #cf3cb3;
+   text-decoration: none;
  }
- /*estilo a personalizar en los custom-.css*/
- nav ul li.activo {
-   background-color: #cf3cb3;
-   position: relative;
- }
- nav ul li.activo::before {
-    color: #cf3cb3;
-    content: "\f0da";
-    font-family: FontAwesome;
-    font-size: 22px;
-    opacity: 1;
-    position: absolute;
-    right: -7px;
+.hamburguesa-menu {
+   display: none; /* Ocultamos por defecto en pantallas grandes */
+   cursor: pointer;
+   order: 4;
 }
- /* Estilos adicionales para mejorar la apariencia en dispositivos pequeños */
+
+.bar {
+   width: 25px;
+   height: 3px;
+   background-color: #2b1100;
+   margin: 5px 0;
+   display: flex;
+   align-self: flex-end;
+}
+
+footer {
+  background-color: #ebebeb;
+  color: #2b1100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+   nav ul {
+       display: none;
+   }
+
+   nav ul.show {
+       display: flex; /* Mostramos el menú cuando tiene la clase 'show' */
+       flex-direction: column;
+       position: absolute;
+       top: 60px; /* Ajusta según tu diseño */
+       width: 95%;
+       background-color: #f4daef;
+       padding: 5px;
+       z-index: 1;
+   }
+
+   nav a {
+       margin: 10px 0;
+   }
+
+   .redes-sociales.hide-on-small-screen {
+      display: none; /* Ocultar en pantallas pequeñas */
+  }
+
+  .logo img {
+   order: 2; /* Cambia el orden para que aparezca después del menú hamburguesa en pantallas pequeñas */
+}
+
+.header-right {
+   order: 3;
+}
+
+nav ul {
+   order: 1;
+}
+
+.hamburguesa-menu {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   order: 4;
+}
+
+.bar {
+   width: 25px;
+   height: 3px;
+   background-color: #2b1100;
+   margin: 3px 0;
+   display: flex;
+   align-self: center;
+}
+}
+
+
