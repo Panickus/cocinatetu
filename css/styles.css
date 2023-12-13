@@ -169,7 +169,23 @@ footer {
 .ramdon {
   display: flex;
   justify-content: center;
+  color: #cf3cb3;
 }
+
+.text-center {
+  margin-top: 100px;
+  color: #cf3cb3;
+}
+
+.row.mt4 {
+  display: flex;
+
+}
+
+.card.text-center {
+  height: 300px;
+}
+
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
    nav ul {
