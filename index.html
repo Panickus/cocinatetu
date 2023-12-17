@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/styles.css">
-   <title>Últimas Recetas</title>
-   <!-- Agrega la CDN de Bootstrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <!-- Agrega la CDN de Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
- <body>
-  <header>
-    <div class="brand">
-      <div class="logo">
-          <img src="images/logotu.svg" alt="Logo de tu página">
-      </div>
-      <div class="hamburguesa-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-      <div class="redes-sociales hide-on-small-screen">
-            <ul>
-              <li><a title="Facebook cocinatetu" target="_blank" rel="noopener" href="https://www.facebook.com/cocinatetu/" class="fb"><i class="fab fa-facebook-f fa-sm"></i></a></li>
-              <li><a title="Twitter cocinatetu" target="_blank" rel="noopener" href="https://www.twitter.com/cocinatetu/" class="tw"><i class="fab fa-twitter"></i></a></li>
-              <li><a title="Youtube cocinatetu" target="_blank" rel="noopener" href="https://www.youtube.com/cocinatetu/" class="yt"><i class="fab fa-youtube fa-sm"></i></a></li>
-              <li><a title="Pinteret cocinatetu" target="_blank" rel="noopener" href="https://www.pinterest.com/cocinatetu/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-              <li><a title="Instagram cocinatetu" target="_blank" rel="noopener" href="https://www.instragram.com/cocinatetu/" class="instagram"><i class="fab fa-instagram"></i></a></li>
-              <li><a title="Tik Tok cocinatetu" target="_blank" rel="noopener" href="https://www.tiktok.com/@cocinatetu" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
-              <li><a title="WhatsApp cocinatetu" target="_blank" rel="noopener" href="https://www.whatsapp.com/channel/sdkfaskdjfoiasd4" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-              <li><a title="Telegram cocinatetu" target="_blank" rel="noopener" href="https://www.t.me/cocinatetu/" class="telegram"><i class="fab fa-telegram"></i></a></li>
-          </ul>
-      </div>
-    </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Países</a></li>
-                <li><a href="#">Quiénes Somos</a></li>
-            </ul>
-        </nav>
-  </header>
-    <div id="infoModal" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button id="closeModalButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-   <div class="container mt-4">
-      <h1 class="text-center">Últimas Recetas</h1>
-      <div class="row mt-4" id="recetasContainer">
-       <!-- Las recetas se añadirán aquí dinámicamente -->
-     </div>
-   </div>
-   <hr>
-   <div class="container">
-    <h2 class="ramdon">Unas Recetas Ramdon</h2>
-    <div class="row">
-      <div id="results"></div>
-    </div>
-  </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="final.css">
+    <title>CocinateTu</title>
 
-   <!--*** FOOTER ***-->
-   <footer>
-      <div class="redes-sociales">
-        <ul>
-          <li><a title="Facebook cocinatetu" target="_blank" rel="noopener" href="https://www.facebook.com/cocinatetu/" class="fb"><i class="fab fa-facebook-f fa-sm"></i></a></li>
-          <li><a title="Twitter cocinatetu" target="_blank" rel="noopener" href="https://www.twitter.com/cocinatetu/" class="tw"><i class="fab fa-twitter"></i></a></li>
-          <li><a title="Youtube cocinatetu" target="_blank" rel="noopener" href="https://www.youtube.com/cocinatetu/" class="yt"><i class="fab fa-youtube fa-sm"></i></a></li>
-          <li><a title="Pinteret cocinatetu" target="_blank" rel="noopener" href="https://www.pinterest.com/cocinatetu/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
-          <li><a title="Instagram cocinatetu" target="_blank" rel="noopener" href="https://www.instragram.com/cocinatetu/" class="instagram"><i class="fab fa-instagram"></i></a></li>
-          <li><a title="Tik Tok cocinatetu" target="_blank" rel="noopener" href="https://www.tiktok.com/@cocinatetu" class="tiktok"><i class="fab fa-tiktok"></i></a></li>
-          <li><a title="WhatsApp cocinatetu" target="_blank" rel="noopener" href="https://www.whatsapp.com/channel/sdkfaskdjfoiasd4" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-          <li><a title="Telegram cocinatetu" target="_blank" rel="noopener" href="https://www.t.me/cocinatetu/" class="telegram"><i class="fab fa-telegram"></i></a></li>
-        </ul>
-      </div>
-   </footer>
-  <!-- Agrega la CDN de Bootstrap y jQuery (necesario para Bootstrap) -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Agrega tus otros scripts aquí -->
-   <script src="main.js"></script>
+    <!-- Aquí puedes añadir enlaces a CSS/Bootstrap -->
+</head>
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="col">
+                <img src="images/logotu.svg" alt="Logo de tu página" class="img-fluid">
+            </div>
+            <div class="col">
+            <!-- Aquí van los íconos de redes sociales -->
+            <div class="social-icons">
+                <a href="tu-link-facebook" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="tu-link-twitter" title="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="tu-link-instagram" title="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="tu-link-youtube" title="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="tu-link-discord" title="discord"><i class="fab fa-discord"></i></a>
+                <a href="tu-link-whatsapp" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="tu-link-telegram" title="telegram"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">CocinateTu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Recetas
+                    </a>
+                    <div class="dropdown-menu" id="menu-recetas" aria-labelledby="navbarDropdownMenuLink">
+                        <!-- Las categorías se agregarán aquí -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="container mt-4">
+            <div class="row" id="recetas-container">
+                <!-- Aquí se insertarán las tarjetas de recetas -->
+            </div>
+        </div>
+        
+        <!-- Modal para detalles de la receta -->
+        <div class="modal fade" id="recetaModal" tabindex="-1" aria-labelledby="recetaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="recetaModalLabel">Nombre de la Receta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Aquí se llenará el contenido del modal -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="paginacion-container">
+            <!-- Los botones de paginación se generarán aquí -->
+        </div>
+    </main>
+
+    <footer class="container">
+        <!-- Aquí va tu pie de página -->
+    </footer>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/final.js"></script>
 </body>
 </html>
+
+
+
+
+
+
