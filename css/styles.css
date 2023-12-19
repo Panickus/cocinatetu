@@ -1,0 +1,127 @@
+body {
+   font-family: 'Helvetica Neue', Arial, sans-serif;
+   font-weight: 600;
+}
+
+.mi-header {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px;
+}
+
+.mi-header img {
+   max-width: 100px; /* Ajusta esto según el tamaño deseado del logo */
+   height: auto;
+}
+
+#logotu {
+   max-width: 100%;
+}
+
+.social-icons a {
+   margin: 0 5px; /* Espaciado entre íconos */
+   color: #3a4040; /* Cambia el color según prefieras */
+}
+
+.social-icons a i {
+   font-size: 22px; /* Tamaño de los íconos */
+}
+
+.navbar {
+   background-color: #f4daef !important; /* Color de fondo personalizado */
+}
+
+
+/* Cambia el color de los enlaces del menú de navegación */
+.navbar-light .navbar-nav .nav-link {
+   color: #cf3cb3 !important;
+}
+
+/* Opcional: Cambia el color al pasar el mouse sobre el enlace */
+.navbar-light .navbar-nav .nav-link:hover {
+   color: #a83296 !important; /* Un color ligeramente más oscuro para el estado hover */
+}
+
+/* Estilo para botones dentro de tarjetas */
+.card .btn {
+   background-color: #3a4040; /* Color de fondo del botón */
+   color: #f4daef; /* Nuevo color de la fuente */
+}
+
+.card .btn:hover {
+   background-color: #2c3232; /* Color de fondo para el estado hover */
+   color: #e6cde6; /* Opcional: Cambia el color de la fuente en el estado hover */
+}
+
+.contacto {
+   display: flex;
+   justify-content: center;
+}
+
+.formulario-personalizado {
+   max-width: 500px; /* Ajusta este valor según tus necesidades */
+   margin: auto; /* Centra el formulario */
+}
+
+#formulario-contacto {
+   max-width: 500px !important;
+   margin: auto !important;
+}
+
+.footer-redes-sociales {
+   background-color: #e6cde6;
+   color: #3a4040;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.footer-redes-sociales .social-icons a {
+   color: #3a4040;
+   margin: 0 10px;
+}
+
+.footer-redes-sociales p {
+   margin-top: 10px;
+}
+
+.sobre-nosotros {
+   font-family: 'Arial', sans-serif;
+   color: #3a4040;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.sobre-nosotros h2 {
+   color: #cf3cb3;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+   text-align: justify;
+   line-height: 1.6;
+}
+
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 600px) {
+   /* Estilos específicos para pantallas pequeñas */
+}
+
+/* Estilos para dispositivos medianos */
+@media (min-width: 601px) and (max-width: 1024px) {
+   /* Estilos específicos para pantallas medianas */
+}
+
+/* Estilos para dispositivos grandes */
+@media (min-width: 1025px) {
+   /* Estilos específicos para pantallas grandes */
+}
+
+@media (max-width: 767px) {
+   .header .social-icons {
+       margin-top: 10px;
+   }
+}
