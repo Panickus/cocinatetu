@@ -85,6 +85,25 @@ body {
    margin-top: 10px;
 }
 
+.sobre-nosotros {
+   font-family: 'Arial', sans-serif;
+   color: #3a4040;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.sobre-nosotros h2 {
+   color: #cf3cb3;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+   text-align: justify;
+   line-height: 1.6;
+}
+
 
 /* Estilos para dispositivos pequeños */
 @media (max-width: 600px) {
