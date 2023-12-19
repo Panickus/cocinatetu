@@ -54,9 +54,35 @@ body {
    color: #e6cde6; /* Opcional: Cambia el color de la fuente en el estado hover */
 }
 
-.my-4 {
-   max-width: 900px;
-   
+.contacto {
+   display: flex;
+   justify-content: center;
+}
+
+.formulario-personalizado {
+   max-width: 500px; /* Ajusta este valor según tus necesidades */
+   margin: auto; /* Centra el formulario */
+}
+
+#formulario-contacto {
+   max-width: 500px !important;
+   margin: auto !important;
+}
+
+.footer-redes-sociales {
+   background-color: #e6cde6;
+   color: #3a4040;
+   text-align: center;
+   padding: 20px 0;
+}
+
+.footer-redes-sociales .social-icons a {
+   color: #3a4040;
+   margin: 0 10px;
+}
+
+.footer-redes-sociales p {
+   margin-top: 10px;
 }
 
 
@@ -75,4 +101,8 @@ body {
    /* Estilos específicos para pantallas grandes */
 }
 
-/* Más estilos personalizados aquí */
+@media (max-width: 767px) {
+   .header .social-icons {
+       margin-top: 10px;
+   }
+}
