@@ -13,11 +13,11 @@ Tecnologías Utilizadas
 HTML5
 CSS3 con Bootstrap
 JavaScript
+
+
 Cómo Contribuir
 ¡Las contribuciones son bienvenidas! Si tienes ideas o sugerencias, por favor, crea un 'issue' o envía un 'pull request'.
 
-Licencia
-Este proyecto está bajo la licencia [INSERTE_TIPO_LICENCIA]. Vea el archivo LICENSE para más detalles.
 
 Contacto
-[Nombre del Desarrollador] - [correo@example.com]
+[Felipe Díaz] - [dev.felipedg@gmail.com]
