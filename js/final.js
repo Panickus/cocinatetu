@@ -93,6 +93,25 @@ function cargarRecetasPorCategoria(categoria) {
 
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Código para el formulario de contacto
+document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el envío tradicional del formulario
+
+    // Obtiene los valores del formulario
+    var nombre = document.getElementById('nombre').value;
+    var email = document.getElementById('email').value;
+    var mensaje = document.getElementById('mensaje').value;
+
+    // Aquí puedes agregar la lógica para enviar estos datos a un servidor
+    // Por ejemplo, usando AJAX, Fetch API, o enviar a un servicio de correo
+
+    // Muestra un mensaje de confirmación o realiza alguna acción después de enviar
+    alert("Mensaje enviado. \n" + "Nombre: " + nombre + "\nEmail: " + email + "\nMensaje: " + mensaje);
+});
+
+
+
 
 
 

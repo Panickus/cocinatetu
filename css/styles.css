@@ -1,6 +1,64 @@
 body {
    font-family: 'Helvetica Neue', Arial, sans-serif;
+   font-weight: 600;
 }
+
+.mi-header {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 10px;
+}
+
+.mi-header img {
+   max-width: 100px; /* Ajusta esto según el tamaño deseado del logo */
+   height: auto;
+}
+
+#logotu {
+   max-width: 100%;
+}
+
+.social-icons a {
+   margin: 0 5px; /* Espaciado entre íconos */
+   color: #3a4040; /* Cambia el color según prefieras */
+}
+
+.social-icons a i {
+   font-size: 22px; /* Tamaño de los íconos */
+}
+
+.navbar {
+   background-color: #f4daef !important; /* Color de fondo personalizado */
+}
+
+
+/* Cambia el color de los enlaces del menú de navegación */
+.navbar-light .navbar-nav .nav-link {
+   color: #cf3cb3 !important;
+}
+
+/* Opcional: Cambia el color al pasar el mouse sobre el enlace */
+.navbar-light .navbar-nav .nav-link:hover {
+   color: #a83296 !important; /* Un color ligeramente más oscuro para el estado hover */
+}
+
+/* Estilo para botones dentro de tarjetas */
+.card .btn {
+   background-color: #3a4040; /* Color de fondo del botón */
+   color: #f4daef; /* Nuevo color de la fuente */
+}
+
+.card .btn:hover {
+   background-color: #2c3232; /* Color de fondo para el estado hover */
+   color: #e6cde6; /* Opcional: Cambia el color de la fuente en el estado hover */
+}
+
+.my-4 {
+   max-width: 900px;
+   
+}
+
 
 /* Estilos para dispositivos pequeños */
 @media (max-width: 600px) {
